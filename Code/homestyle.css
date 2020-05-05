@@ -1,0 +1,103 @@
+@font-face {
+    /* Montserrat Text Font*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body, html {
+    height: 100%;
+    overflow: visible;
+}
+
+.background_image {
+    /* The image used */
+    background-image: url("https://lh3.googleusercontent.com/jpHS8d6HiysO0D_VGMUPsA5IFgTbWIEKketTuZvhtYhHWZeW3fME_nBvAfZtTS7G_lF1Qj1CX1hBviTeRZuinseAi-SOl15Zl_HESVIU1OPBxrGrFS7xCtO1oz-pXffgdhev62bhfBuxPYDVG7F9xBBEad7TTn9nC13j-ocaF0cSLINk9z-KH7RMsg99OoLRV7u0WJd4a7NlGUovREpdPiineUy3Mkn_3utouTOpERUWCVTQqZOd-tT4MnmzRjCssmckzSe3hKLRLhlTNvT7sQP5uoU_vgqlNKwfEGsqqbTzzrBnUD3XFE096QtFTwDVc68sS9AhV4WTj4cFJgDU1GLGOkCdE29OEeoWp9XrqxbQfEPsAK04UEU-MIRmFHHialagorApa8Bcb92DND39nQyCuqdSSWzEM38sAgtgV_LiPbkXzEd-FEsEz5enelNnQW4rZgfaSsVN55Ps2hSPOEOYb8jB5j-UiR_ISxYJtlYdiW7__iolWoClV_Id2O4rPJl2KBp4WTuInmbBPHFBae6wJGxfpaj4AvoJmipQsKYVBzxxjG7vgRa9lxcF1v9LydDgh1c45dQSju29FOvckA3-RD6FWno92U8ecwzqJRb3gO5HG7xOjii7ZWMfetpCL7dISXsDKxLcsaTV9R2aciEJ9xW3m_IACdY_oNv5LCAoxH1_QAu4hBcNSJn1Ag=w1600-h848-no");
+    /* Auto height */
+    height: 100%;
+    /* Set Full when adjusting screen size*/
+    min-height: 100%;
+    min-width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Logo for BJB Website */
+
+.bjb_logo {
+    z-index: 0;
+    /* set brighton jones logo position */
+    top: 25px;
+    left: 25px;
+    /* make object overlap with others*/
+    position: absolute;
+}
+
+/* Text for Homepage */
+
+.hometext {
+    /* make text float on its own*/
+    position: fixed;
+    /* position text to desired position*/
+    left: 43%;
+    top: 17%;
+    /* make text align to the right*/
+    text-align: right;
+}
+
+/* Text for Homepage */
+
+.hometext {
+    /* make text float on its own*/
+    position: fixed;
+    /* position text to desired position*/
+    left: 43%;
+    top: 17%;
+    /* make text align to the right*/
+    text-align: right;
+    font-weight: none;
+}
+
+/* Properties for Navigation Item */
+
+.navigation_bar {
+    position: fixed;
+    top: 20px;
+    left: 65%;
+}
+
+/* Properties for Navigation Item when not hovering*/
+
+.navigation_bar a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* Properties for Navigation Item when hovering*/
+
+.navigation_bar a:hover {
+    color: orange;
+}
+
+/* Properties for each Navigation Item */
+
+li {
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', cursive;
+    font-size: 30px;
+    color: black;
+    /* Get rid of bullet points */
+    list-style-type: none;
+    /* make each item separate from the other*/
+    padding: 1px;
+    /* make any overflow hidden*/
+    overflow: hidden;
+    height: 50px;
+}

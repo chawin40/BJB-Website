@@ -1,0 +1,320 @@
+@font-face {
+  /* Montserrat Text Font*/
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Montserrat style */
+
+.MontserratFamily {
+  font-family: 'Montserrat', cursive;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.background_image {
+  /* The image used */
+  background-image: url("https://lh3.googleusercontent.com/jpHS8d6HiysO0D_VGMUPsA5IFgTbWIEKketTuZvhtYhHWZeW3fME_nBvAfZtTS7G_lF1Qj1CX1hBviTeRZuinseAi-SOl15Zl_HESVIU1OPBxrGrFS7xCtO1oz-pXffgdhev62bhfBuxPYDVG7F9xBBEad7TTn9nC13j-ocaF0cSLINk9z-KH7RMsg99OoLRV7u0WJd4a7NlGUovREpdPiineUy3Mkn_3utouTOpERUWCVTQqZOd-tT4MnmzRjCssmckzSe3hKLRLhlTNvT7sQP5uoU_vgqlNKwfEGsqqbTzzrBnUD3XFE096QtFTwDVc68sS9AhV4WTj4cFJgDU1GLGOkCdE29OEeoWp9XrqxbQfEPsAK04UEU-MIRmFHHialagorApa8Bcb92DND39nQyCuqdSSWzEM38sAgtgV_LiPbkXzEd-FEsEz5enelNnQW4rZgfaSsVN55Ps2hSPOEOYb8jB5j-UiR_ISxYJtlYdiW7__iolWoClV_Id2O4rPJl2KBp4WTuInmbBPHFBae6wJGxfpaj4AvoJmipQsKYVBzxxjG7vgRa9lxcF1v9LydDgh1c45dQSju29FOvckA3-RD6FWno92U8ecwzqJRb3gO5HG7xOjii7ZWMfetpCL7dISXsDKxLcsaTV9R2aciEJ9xW3m_IACdY_oNv5LCAoxH1_QAu4hBcNSJn1Ag=w1600-h848-no");
+  /* Auto height */
+  height: 100%;
+  /* Set Full when adjusting screen size*/
+  min-height: 100%;
+  min-width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Logo for BJB Website */
+
+.bjb_logo {
+  position: absolute;
+  z-index: 0;
+  /* set brighton jones logo position */
+  top: 25px;
+  left: 25px;
+}
+
+
+/* Properties for Navigation Item */
+
+.navigation_bar {
+  position: fixed;
+  top: 20px;
+  left: 65%;
+}
+
+/* Properties for Navigation Item when not hovering*/
+
+.navigation_bar a {
+  text-decoration: none !important;
+  color: black;
+}
+
+/* Properties for Navigation Item when hovering*/
+
+.navigation_bar a:hover {
+  color: orange;
+}
+
+/* Properties for each Navigation Item */
+
+li {
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', cursive;
+  font-size: 30px;
+  color: black;
+  /* Get rid of bullet points */
+  list-style-type: none;
+  /* make each item separate from the other*/
+  padding: 1px;
+  /* make any overflow hidden*/
+  overflow: hidden;
+  height: 50px;
+}
+
+/* Container Block*/
+
+.container {
+  /* set size of box */
+  height: 450px;
+  width: 1200px;
+  /* set position of block */
+  left: 0%;
+  top: 12%;
+  bottom: 0;
+}
+
+/* background overlay for container block */
+
+.background_overlay {
+  /* set background color*/
+  background: rgba(0, 0, 0, 0.8);
+  /* set position of background overlay*/
+  position: fixed;
+  width: 100%;
+  height: 80%;
+  /* position background */
+  left: 0%;
+  top: 20%;
+  overflow: hidden;
+}
+
+/* My LinkedIn */
+.MyLinkedIn{
+  height: 5%;
+  width: 5%;
+  left: 50px;
+}
+
+/* PDF */
+
+.PDF_button {
+  /* set design for button*/
+  background-color: gray;
+  color: white;
+  /* set mouse design when hover on*/
+  cursor: pointer;
+  /* set button model */
+  padding: 18px;
+  width: 15%;
+  border: none;
+  outline: none;
+  /* format text*/
+  text-align: center;
+  font-size: 15px;
+  /* align button to first */
+  top: 100px;
+  left: 75px;
+  /* make button relative in term of its position */
+  position: relative;
+  /* make edge rounded*/
+  border-radius: 50px
+}
+
+/* Hover Action for PDF button, Axcess, One Login*/
+
+.PDF_button:hover, .Axcess_button:hover, .OneLogin_button:hover, .active {
+  background-color: orange;
+}
+
+/* Content Box */
+
+.PDF_content {
+  padding: 0 18px;
+  background-color: lightgray;
+  /* hide content till further notice */
+  display: none;
+  position: absolute;
+  /* set size of content box */
+  width: 800px;
+  height: 500px;
+  /* set position of content box */
+  left: 425px;
+  align-self: center;
+  /* if longer than page, make content scrollable */
+  overflow: scroll;
+  /* aligning text to the center */
+  text-align: center;
+}
+
+/* PDF Table */
+
+/* Title Design for Table*/
+
+.title {
+  align-content: center;
+}
+
+.PDF_table, .Axcess_table, .OneLogin_table {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  width: 700px;
+  border-style: solid;
+  text-decoration: none;
+}
+
+/* highlight PDF cell header */
+
+.PDF_table th {
+  font-weight: bold;
+}
+
+/* border all cell */
+
+.PDF_table td, th {
+  border-style: solid;
+}
+
+/* CCH */
+
+.Axcess_button {
+  /* set design for button*/
+  background-color: gray;
+  color: white;
+  /* set mouse design when hover on*/
+  cursor: pointer;
+  /* set button model */
+  padding: 18px;
+  width: 15%;
+  border: none;
+  outline: none;
+  /* format text*/
+  text-align: center;
+  font-size: 15px;
+  /* align button to second position */
+  top: 200px;
+  left: 75px;
+  /* make button relative in term of its position */
+  position: relative;
+  /* make edge rounded*/
+  border-radius: 50px;
+}
+
+.Axcess_content {
+  padding: 0 18px;
+  background-color: lightgray;
+  /* hide content till further notice */
+  display: none;
+  position: fixed;
+  /* set size of content box */
+  width: 800px;
+  height: 500px;
+  /* set position of content box */
+  top: 30%;
+  left: 425px;
+  align-self: center;
+  /* if longer than page, make content scrollable */
+  overflow: scroll;
+  /* aligning text to the center*/
+  text-align: center;
+}
+
+/* highlight Axcess cell header*/
+
+.Axcess_table th {
+  font-weight: bold;
+}
+
+/* border all cell */
+
+.Axcess_table td, th {
+  border-style: solid;
+}
+
+/* Axcess Table Design */
+
+/* OneLogin */
+
+.OneLogin_button {
+  /* set design for button*/
+  background-color: gray;
+  color: white;
+  /* set mouse design when hover on*/
+  cursor: pointer;
+  /* set button model */
+  padding: 18px;
+  width: 15%;
+  border: none;
+  outline: none;
+  /* format text*/
+  text-align: center;
+  font-size: 15px;
+  /* align button to third position */
+  top: 300px;
+  left: 75px;
+  /* make button relative in term of its position */
+  position: relative;
+  /* make edge rounded*/
+  border-radius: 50px
+}
+
+.OneLogin_content {
+  padding: 0 18px;
+  background-color: lightgray;
+  /* hide content till further notice */
+  display: none;
+  position: fixed;
+  /* set size of content box */
+  width: 800px;
+  height: 500px;
+  /* set position of content box */
+  top: 30%;
+  left: 425px;
+  align-self: center;
+  /* if longer than page, make content scrollable */
+  overflow: scroll;
+  /* align text to the center */
+  text-align: center;
+}
+
+/* highlight OneLogin cell header */
+.OneLogin_table th{
+  font-weight: bold;
+}
+
+/* border all cell */
+.OneLogin_table td, th{
+  border-style: solid;
+}
+
+/* align text to the left */
+.alignleft{
+  text-align: left;
+}
+
+/* underline text */
+.underline{
+  text-decoration: underline;
+}
